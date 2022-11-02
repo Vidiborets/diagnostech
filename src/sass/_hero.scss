@@ -1,0 +1,110 @@
+.hero{
+    padding-bottom: 80px;
+}
+.container_position{
+    grid-gap: 55px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    padding-right: 0;
+}
+.hero-nav{
+    margin-top: 48px;
+}
+.hero-title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.22;
+    color: var(--background-nav);
+    margin-bottom: 16px;
+}
+.hero-title__text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    color: var(--text-color-blue);
+    margin-bottom: 32px;
+}
+.hero-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--text-color-list);
+    margin-left: 9px;
+    transition:
+    color var(--cubic);
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        color: var(--text-color-blue);
+    }
+}
+
+.hero-list__item{
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.hero-button{
+    padding: 9px 22px;
+    background-color: var(--text-color-blue);
+    border-radius: 12px;
+    border-width: 0;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--background--color-white);
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    transition:
+    color var(--cubic),
+    background-color var(--cubic);
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        background-color: var(--text-color-list);
+    }
+}
+.color-icon{
+    fill: var(--background--color-white);
+}
+
+.hero-checkbox__item{
+    display: flex;
+   
+}
+.hero-label__checkbox{
+    background-image: url(../images/checkbox.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    transition:
+    color var(--cubic);
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        color: var(--text-color-yellow);
+    }
+    &:checked + .hero-label__checkbox{
+        background-image: url(../images/checkbox-checked.svg);
+        background-origin: border-box;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        border-color: transparent;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.hero-image{
+    background-image: url(../images/img.jpg);
+     background-repeat: no-repeat;
+    width: 610px;
+    height: 418px;
+    text-align: center;
+}

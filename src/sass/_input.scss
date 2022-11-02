@@ -1,0 +1,18 @@
+.header--input{
+    padding: 9px 12px 9px 16px;
+    width: 282px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.header--input::-webkit-input-placeholder {
+    color: var(--text-color-blue);
+ }
+
+.header--input__icon{
+    fill: var(--text-color-yellow);
+}
